@@ -24,7 +24,7 @@ function sync() {
     fi
 
     docker run -ti -v "$ROOT_DIR":/host --rm "$IMAGE_NAME" \
-        -c "(cd /usr/share/php/doc/pman && tar czf - .) | (cd /host && tar xzf -)"
+        bash -c "(cd /usr/share/php/doc/pman && tar czf - .) | (cd /host && tar xzf -)"
 }
 
 if [[ '0' -eq "$#" ]] ; then
