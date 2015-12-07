@@ -1,0 +1,11 @@
+{
+    "name": "willdurand/pman",
+    "description": "pear-doc.php.net/pman on Composer/Packagist",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Durand",
+            "email": "will+git@drnd.me"
+        }
+    ]
+}
