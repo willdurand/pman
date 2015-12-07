@@ -5,6 +5,6 @@ set -eo pipefail
 ROOT_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd)"
 IMAGE_NAME="willdurand/pman"
 
-docker build -t "$IMAGE_NAME" "$ROOT_DIR"
+docker build --no-cache -t "$IMAGE_NAME" "$ROOT_DIR"
 docker run -ti -v "$ROOT_DIR":/host --rm "$IMAGE_NAME" \
     -c "(cd /usr/share/php/doc/pman && tar czf - .) | (cd /host && tar xzf -)"
