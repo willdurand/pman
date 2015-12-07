@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+MAN="$(which man)"
+PHP_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd)"
+
+"$MAN" -M "$PHP_DIR" "$*"
