@@ -7,8 +7,5 @@
             "name": "William Durand",
             "email": "will+git@drnd.me"
         }
-    ],
-    "config": {
-        "bin-dir": "bin"
-    }
+    ]
 }
