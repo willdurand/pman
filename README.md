@@ -2,7 +2,7 @@ pman
 ====
 
 This package provides **pman**, the [PHP
-manual](http://fr.php.net/download-docs.php) in *nix style man pages, via
+manual](http://fr.php.net/download-docs.php) in \*nix style man pages, via
 Composer and Packagist.
 
 
