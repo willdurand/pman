@@ -2,7 +2,7 @@ pman
 ====
 
 This package provides **pman**, the [PHP
-manual](http://fr.php.net/download-docs.php) in *nix style man pages, via
+manual](http://fr.php.net/download-docs.php) in \*nix style man pages, via
 Composer and Packagist.
 
 
@@ -13,11 +13,11 @@ Installation
 
     composer global require willdurand/pman:dev-master
 
-2) Then, add `$COMPOSER_HOME/vendor/willdurand/pman/bin` to your `$PATH`.
+2) Then, add `$COMPOSER_BIN_DIR` to your `$PATH`.
 
-`$COMPOSER_HOME` is often `~/.composer`, but it may be different depending on
-your operating system or configuration.  Also, it is important to use such a
-path and not, for instance, `.composer/vendor/bin`.
+`$COMPOSER_BIN_DIR` is often `~/.composer/vendor/bin`, but it may be different
+depending on your operating system or configuration.  Also, it is important to
+use such a path and not directly, `.composer/vendor/bin`.
 
 
 Usage
