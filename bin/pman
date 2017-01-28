@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 MAN="$(which man)"
-PHP_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd)"
+SCRIPT_NAME="$(readlink -f "${BASH_SOURCE[0]}")"
+PHP_DIR="$(cd "$( dirname "${SCRIPT_NAME}" )/.." && pwd)"
 
 "$MAN" -M "$PHP_DIR" "$*"

@@ -2,7 +2,8 @@
 
 set -eo pipefail
 
-ROOT_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd)"
+SCRIPT_NAME="$(readlink -f "${BASH_SOURCE[0]}")"
+ROOT_DIR="$(cd "$( dirname "${SCRIPT_NAME}" )/.." && pwd)"
 IMAGE_NAME="willdurand/pman"
 
 function usage() {
